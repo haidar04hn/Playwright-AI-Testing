@@ -1,0 +1,19 @@
+Generate and execute a Playwright test using Playwright MCP.
+Test Scenario:
+Open the URL: https://www.demoblaze.com/index.html
+Click on the "Log in" link in the top navigation bar.
+Enter Haidarali in the Username field.
+Enter Test@123 in the Password field.
+Click on the "Log in" button.
+Verify that the "Log out" link is visible.
+Verify that the text "Welcome Haidarali" appears at the top right of the page.
+Click on the "Log out" link.
+Verify that the "Log in" link is visible again after logging out.
+Implementation Requirements:
+Apply the Page Object Model (POM) design pattern for page structure and element management.
+Save all page object files inside the project's playwrightaitesting/ directory.
+Follow the playwright javascript-style convention.
+Execute each step interactively using Playwright MCP tools to validate flow and elements.
+Once all steps are validated successfully, generate and save the final test script as altesting/test_login_logout.js.
+Automatically execute the saved test in headed mode (browser visible).
+If any step or assertion fails, analyze, fix, and rerun the test until it passes successfully.
